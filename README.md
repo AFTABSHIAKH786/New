@@ -1,10 +1,6 @@
-# New
-
-
-MDAyIGFmdGFiLXdpbiAxOTIuMTY4LjAuNzUgODA2MWQ5NmNiYTNkMjc4ZGUyNzAyMDcxNjdiNjI1MDhmOGM4NTFjYTAzOTA2YjkzZjQ5MWE4M2U2NWU2MjZjOQ==
- 
-Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.11.0-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.0.74' WAZUH_AGENT_GROUP='default' WAZUH_AGENT_NAME='aftab-win'
- 
 4h0j2gkp8s4x.cloud.wazuh.com
-
+ 
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.10.1-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='4h0j2gkp8s4x.cloud.wazuh.com' WAZUH_REGISTRATION_PASSWORD='mNmLK1OGzQTOzXvkcHSEkySN7x8Rf74E' WAZUH_AGENT_NAME='aftab'
+ 
 NET START WazuhSvc
+ 
