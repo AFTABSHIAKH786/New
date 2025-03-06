@@ -5,3 +5,6 @@ MDAyIGFmdGFiLXdpbiAxOTIuMTY4LjAuNzUgODA2MWQ5NmNiYTNkMjc4ZGUyNzAyMDcxNjdiNjI1MDhm
  
 Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.11.0-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.0.74' WAZUH_AGENT_GROUP='default' WAZUH_AGENT_NAME='aftab-win'
  
+4h0j2gkp8s4x.cloud.wazuh.com
+
+NET START WazuhSvc
